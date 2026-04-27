@@ -1,0 +1,12 @@
+.contenedor {
+  display: flex;
+  border: 1px solid black;
+}
+.caja {
+  padding: 10px;
+  margin: 5px;
+  background-color: lightyellow;
+}
+.primero { order: 3; }
+.segundo { order: 2; }
+.tercero { order: 1; }
