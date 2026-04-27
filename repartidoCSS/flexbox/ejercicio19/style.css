@@ -1,0 +1,18 @@
+.formulario {
+  width: 400px;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.campo {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+label {
+  flex: 0 0 120px;
+  text-align: left;
+}
+input {
+  flex: 1;
+  padding: 5px;
+}
