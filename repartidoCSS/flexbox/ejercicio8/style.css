@@ -1,0 +1,12 @@
+.contenedor {
+  display: flex;
+  width: 600px;
+  border: 1px solid black;
+}
+.caja {
+  padding: 10px;
+  text-align: center;
+}
+.a { flex-grow: 1; background-color: lightblue; }
+.b { flex-grow: 2; background-color: lightcoral; }
+.c { flex-grow: 1; background-color: lightgreen; }
