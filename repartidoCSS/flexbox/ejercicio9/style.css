@@ -1,0 +1,14 @@
+.contenedor {
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+.caja {
+  width: 150px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: lightpink;
+  text-align: center;
+}
