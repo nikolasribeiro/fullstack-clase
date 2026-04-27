@@ -1,0 +1,14 @@
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.item {
+  flex: 1 1 calc(25% - 10px);
+  min-width: 200px;
+  background-color: lightgray;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
