@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f1f2f6;
+}
+
+/* Grilla principal para las 3 tarjetas */
+.precios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Sub-grilla para cada tarjeta */
+.plan {
+  display: grid;
+  /* 
+    Las filas se dividen en:
+    1. auto: título
+    2. auto: precio
+    3. 1fr: absorbe todo el espacio libre (las características)
+    4. auto: botón, empujado al fondo gracias al 1fr de la fila anterior
+  */
+  grid-template-rows: auto auto 1fr auto;
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.nombre {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.precio {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  color: #27ae60;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  text-align: left;
+}
+
+.features li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
