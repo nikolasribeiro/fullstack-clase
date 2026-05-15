@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+
+.caja {
+  background-color: #9b59b6;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.destacada {
+  /* Ocupa desde la línea 1 hasta la 3 en columnas (2 columnas en total) */
+  grid-column: 1 / 3;
+  background-color: #8e44ad;
+}
