@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px 300px 80px;
+  grid-template-areas:
+    "head head head"
+    "side main main"
+    "foot foot foot";
+  gap: 10px;
+}
+
+.cabecera, .sidebar, .principal, .pie {
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cabecera {
+  grid-area: head;
+  background-color: #34495e;
+}
+
+.sidebar {
+  grid-area: side;
+  background-color: #2980b9;
+}
+
+.principal {
+  grid-area: main;
+  background-color: #27ae60;
+}
+
+.pie {
+  grid-area: foot;
+  background-color: #34495e;
+}
