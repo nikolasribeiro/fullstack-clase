@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Define que cualquier fila implícita tendrá exactamente 100px de alto */
+  grid-auto-rows: 100px;
+  gap: 10px;
+}
+
+.caja {
+  background-color: #f1c40f;
+  color: #333;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
