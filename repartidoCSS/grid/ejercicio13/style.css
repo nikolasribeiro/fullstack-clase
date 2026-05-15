@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.contenedor {
+  display: grid;
+  gap: 10px;
+  background-color: #ecf0f1;
+  padding: 15px;
+  border: 2px dashed #bdc3c7;
+  margin-bottom: 30px;
+}
+
+.a {
+  /* auto-fill: Deja las columnas vacías si hay espacio libre */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.b {
+  /* auto-fit: Colapsa las columnas vacías y expande los items para ocupar el espacio */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.caja {
+  background-color: #e74c3c;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  height: 100px;
+}
