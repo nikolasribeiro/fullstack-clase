@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: repeat(2, 200px);
+  border: 2px solid #ccc;
+  background-color: #f9f9f9;
+  width: fit-content;
+}
+
+.caja {
+  background-color: #e84393;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+/* Alineaciones individuales */
+.c1 {
+  /* Arriba a la izquierda (align-self / justify-self) */
+  place-self: start start;
+}
+
+.c2 {
+  /* Centro */
+  place-self: center center;
+}
+
+.c3 {
+  /* Abajo a la derecha */
+  place-self: end end;
+}
+
+.c4 {
+  /* Abajo al centro */
+  place-self: end center;
+}
