@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.calendario {
+  display: grid;
+  /* 7 columnas iguales para los días de la semana */
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.dia-titulo {
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.dia {
+  background-color: #ecf0f1;
+  color: #333;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  /* Mantiene proporción cuadrada 1:1 */
+  aspect-ratio: 1;
+}
+
+.dia:hover {
+  background-color: #bdc3c7;
+  cursor: pointer;
+}
+
+.vacio {
+  background-color: transparent;
+  border: none;
+  cursor: default;
+}
+.vacio:hover {
+  background-color: transparent;
+}
