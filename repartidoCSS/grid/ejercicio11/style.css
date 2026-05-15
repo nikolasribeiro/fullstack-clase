@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.contenedor {
+  display: grid;
+  /* Crea tantas columnas como quepan, cada una con un mínimo de 200px y máximo 1fr */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.caja {
+  background-color: #1abc9c;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  height: 100px;
+}
