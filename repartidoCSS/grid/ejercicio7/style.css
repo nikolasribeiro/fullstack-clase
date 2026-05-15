@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.contenedor {
+  width: 600px;
+  height: 400px;
+  background-color: #f1f2f6;
+  border: 2px dashed #ccc;
+  
+  /* Grilla de 2x2 */
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
+  
+  /* Centra TODA la grilla dentro del contenedor */
+  place-content: center;
+}
+
+.caja {
+  background-color: #2ecc71;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  
+  /* Centrar el texto dentro de cada caja */
+  display: grid;
+  place-items: center;
+}
