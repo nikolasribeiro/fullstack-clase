@@ -1,0 +1,19 @@
+# Nmap 7.92 scan initiated Thu Jul 16 21:00:00 2026 as: nmap -A -vvv -p- --open -oN puertos-utu 10.36.146.0/24
+Nmap scan report for r179-27-5-98.static.adinet.com.uy (10.36.146.3)
+Host is up, received conn-refused (0.0014s latency).
+Scanned at 2026-07-16 21:00:37 -03 for 182s
+Not shown: 65534 closed tcp ports (conn-refused)
+PORT     STATE SERVICE REASON  VERSION
+5355/tcp open  llmnr?  syn-ack
+
+Nmap scan report for 10.36.146.6
+Host is up, received conn-refused (0.013s latency).
+Scanned at 2026-07-16 21:00:37 -03 for 182s
+Not shown: 65219 closed tcp ports (conn-refused), 315 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE    REASON  VERSION
+7700/tcp open  em7-secom? syn-ack
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port7700-TCP:V=7.92%I=7%D=7/16%Time=6A5970CF%P=x86_64-redhat-linux-gnu%
+SF:r(GenericLines,2,"\r\n");
+
